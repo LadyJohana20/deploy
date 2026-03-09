@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8080;
 
 // 1. Conexión a MongoDB Atlas
 // Importar la función de conexión a MongoDB
-const conexionMongo = require('.https://deploy-production-1017.up.railway.app/database/conexionAtlas');
+const conexionMongo = require('./database/conexionAtlas');
 
 // Establecer la conexión a MongoDB antes de iniciar el servidor
 conexionMongo();
