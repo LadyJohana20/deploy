@@ -41,3 +41,28 @@ module.exports = conexionMongo;
 
 
 
+
+// const mongoose = require('mongoose');
+// const dotenv = require('dotenv')
+// dotenv.config();
+
+// const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
+
+
+// const uri = `mongodb+srv://ladyjohana20:${MONGO_PASSWORD}@cluster0.c54kzc6.mongodb.net/?appName=Cluster0`;
+
+
+// const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
+
+// async function run() {
+//   try {
+//     // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
+//     await mongoose.connect(uri, clientOptions);
+//     await mongoose.connection.db.admin().command({ ping: 1 });
+//     console.log(" You successfully connected to MongoDB!");
+//   } catch (error) {
+//     console.error("Error connecting to MongoDB:", error);
+//   }
+// }
+
+// run().catch(console.dir);

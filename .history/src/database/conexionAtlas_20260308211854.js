@@ -11,12 +11,16 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 
-// 3. Obtener la contraseña de MongoDB desde las variables de entorno
-const MONGO_PASSWORD = process.env.MONGO_PASSWORD
+// 3. Obtener la URI de conexión desde las variables de entorno
+const uri = process.env.MONGO_URI || process.env.DATABASE_URL || `mongodb+srv://ladyjohana20:${process.env.MONGO_PASSWORD}@cluster0.c54kzc6.mongodb.net/ecommerce?appName=Cluster0`;
 
-// 4. Construir la URI de conexión a MongoDB utilizando la contraseña
-const uri = `mongodb+srv://ladyjohana20:${MONGO_PASSWORD}@cluster0.c54kzc6.mongodb.net/ecommerce?appName=Cluster0`;
-//mongodb+srv://ladyjohana20:<db_password>@cluster0.c54kzc6.mongodb.net/?appName=Cluster0
+const clientOptions = { 
+  serverApi: 
+  { version: '1', 
+    strict: true, 
+    deprecationErrors: true 
+  } 
+};
 const clientOptions = { 
   serverApi: 
   { version: '1', 
