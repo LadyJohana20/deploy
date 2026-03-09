@@ -24,6 +24,6 @@ conexionMongo();
 //conexionMongoLocal();
 
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto http://localhost:${PORT}`);
+    console.log(`Servidor escuchando en el puerto https://deploy-production-1017.up.railway.app/:${PORT}`);
 });
 
