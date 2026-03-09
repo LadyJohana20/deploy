@@ -1,0 +1,189 @@
+<!-- HERO -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <p class="text-warning fw-bold mb-2" style="letter-spacing:2px; font-size:0.9rem;">⛺ ESPECIALISTAS DESDE 2005</p>
+        <h1 class="hero-title">La mejor protección para cada <span>aventura</span></h1>
+        <p class="hero-subtitle">Carpas para eventos, camping y parasoles para vehículos. Resistentes, duraderas y al mejor precio del mercado.</p>
+        <a href="/catalogo" class="btn-hero-primary">Ver Catálogo</a>
+        <a href="/contacto" class="btn-hero-secondary">Contactarnos</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80&fit=crop" 
+             class="img-fluid rounded-3 shadow-lg" alt="Carpa de evento Carpas El Fuerte" 
+             style="max-height:380px; object-fit:cover; border: 4px solid rgba(255,255,255,0.2);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARACTERÍSTICAS -->
+<section class="py-5" style="background:white;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="feature-card">
+          <div class="feature-icon">🏕️</div>
+          <h5>Alta Resistencia</h5>
+          <p class="text-muted small mb-0">Materiales de grado profesional para cualquier clima</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h5>Envío a Todo el País</h5>
+          <p class="text-muted small mb-0">Entregamos en toda Colombia de forma rápida y segura</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h5>Mejores Precios</h5>
+          <p class="text-muted small mb-0">Precios directos de fábrica sin intermediarios</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h5>Garantía Oficial</h5>
+          <p class="text-muted small mb-0">Garantía en todos nuestros productos por escrito</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORÍAS -->
+<section class="py-5" style="background: var(--crema);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title mx-auto" style="display:block;">Nuestras Categorías</h2>
+      <p class="text-muted mt-3">Encuentra el producto ideal para tu necesidad</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="/catalogo" class="text-decoration-none">
+          <div class="categoria-card">
+            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&q=80&fit=crop" alt="Carpas de Evento">
+            <div class="categoria-overlay">
+              <h5>⛺ Carpas de Evento</h5>
+              <small>Bodas, cumpleaños, ferias y más</small>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/catalogo" class="text-decoration-none">
+          <div class="categoria-card">
+            <img src="https://images.unsplash.com/photo-1561211919-1947abbbb35b?w=400&q=80&fit=crop" alt="Parasoles para Autos">
+            <div class="categoria-overlay">
+              <h5>🚗 Parasoles para Autos</h5>
+              <small>Protección solar para tu vehículo</small>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/catalogo" class="text-decoration-none">
+          <div class="categoria-card">
+            <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=400&q=80&fit=crop" alt="Carpas de Camping">
+            <div class="categoria-overlay">
+              <h5>🏔️ Carpas de Camping</h5>
+              <small>Para tus aventuras al aire libre</small>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section class="py-5" style="background:white;">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="section-title">Productos Destacados</h2>
+      <a href="/src/views/catalogo.hbs" class="btn btn-outline-success rounded-pill px-4">Ver todo el catálogo →</a>
+    </div>
+    <div class="row g-4" id="productosDestacados">
+      <!-- Productos cargados via JS -->
+      <div class="col-md-3">
+        <div class="producto-card">
+          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=220&fit=crop" alt="Carpa 6x3m">
+          <div class="card-body">
+            <span class="badge-categoria mb-2">Carpas</span>
+            <h6 class="card-title mt-2">Carpa Premium 6×3m</h6>
+            <p class="text-muted small">Estructura de aluminio, lona 300gr. Ideal para eventos.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="precio-producto">$85.000</span>
+            </div>
+            <button class="btn-agregar-carrito mt-2" onclick="agregarAlCarrito('demo1','Carpa Premium 6x3m',85000,'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=60','carpas')">
+              <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="producto-card">
+          <img src="https://images.unsplash.com/photo-1561211919-1947abbbb35b?w=400&h=220&fit=crop" alt="Parasol Auto">
+          <div class="card-body">
+            <span class="badge-categoria parasol mb-2">Parasoles</span>
+            <h6 class="card-title mt-2">Parasol Térmico Universal</h6>
+            <p class="text-muted small">Reflectante plateado, plegable. Protege hasta 60°C.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="precio-producto">$4.500</span>
+            </div>
+            <button class="btn-agregar-carrito mt-2" onclick="agregarAlCarrito('demo2','Parasol Térmico Universal',4500,'https://images.unsplash.com/photo-1561211919-1947abbbb35b?w=60','parasoles')">
+              <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="producto-card">
+          <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=400&h=220&fit=crop" alt="Carpa Camping">
+          <div class="card-body">
+            <span class="badge-categoria mb-2">Carpas</span>
+            <h6 class="card-title mt-2">Carpa Camping 4 Personas</h6>
+            <p class="text-muted small">Impermeable, armado rápido, incluye bolso de transporte.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="precio-producto">$32.000</span>
+            </div>
+            <button class="btn-agregar-carrito mt-2" onclick="agregarAlCarrito('demo3','Carpa Camping 4 Personas',32000,'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=60','carpas')">
+              <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="producto-card">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=220&fit=crop" alt="Parasol Lateral">
+          <div class="card-body">
+            <span class="badge-categoria parasol mb-2">Parasoles</span>
+            <h6 class="card-title mt-2">Parasol Lateral Plegable</h6>
+            <p class="text-muted small">Para ventanillas traseras, tela mesh, fácil instalación.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="precio-producto">$2.800</span>
+            </div>
+            <button class="btn-agregar-carrito mt-2" onclick="agregarAlCarrito('demo4','Parasol Lateral Plegable',2800,'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=60','parasoles')">
+              <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER CTA -->
+<section style="background: linear-gradient(135deg, #e76f51, #f4a261); padding: 60px 0;">
+  <div class="container text-center text-white">
+    <h2 style="font-weight:800; font-size:2rem;">¿Necesitás una carpa para tu evento?</h2>
+    <p style="font-size:1.1rem; opacity:0.9; margin:1rem 0 2rem;">Consultanos y te asesoramos sin compromiso. ¡Envíos a todo el país!</p>
+    <a href="/contacto" style="background:white; color:#e76f51; font-weight:800; padding:14px 40px; border-radius:30px; text-decoration:none; font-size:1.05rem; transition:transform 0.3s; display:inline-block;" 
+       onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'">
+      📞 Contactar Ahora
+    </a>
+  </div>
+</section>

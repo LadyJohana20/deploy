@@ -1,0 +1,29 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="form-card text-center">
+        <div style="background: linear-gradient(135deg, #1a4a2e, #2d6a4f); width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 15px;">
+          <i class="bi bi-person-lock text-white" style="font-size:1.8rem;"></i>
+        </div>
+        <h2 style="color:var(--verde-oscuro); font-weight:800;">Iniciar Sesión</h2>
+        <p class="text-muted mb-4">Accedé al panel de administración</p>
+        <form action="/login" method="POST">
+          <div class="mb-3 text-start">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="admin@carpaselfuerte.com" required>
+          </div>
+          <div class="mb-4 text-start">
+            <label class="form-label">Contraseña</label>
+            <input type="password" class="form-control" name="password" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn-submit w-100">
+            <i class="bi bi-box-arrow-in-right me-2"></i>Ingresar
+          </button>
+        </form>
+        <p class="text-center mt-3 text-muted small">
+          ¿No tienes cuenta? <a href="/api/usuarios/registro" style="color:var(--verde-claro);">Registrarse</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

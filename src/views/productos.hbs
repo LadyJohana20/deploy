@@ -1,0 +1,44 @@
+<div class="container py-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h2 class="section-title">Catálogo de Productos</h2>
+      <p class="text-muted mt-2">Todos nuestros productos disponibles</p>
+    </div>
+    <a href="/api/productos/dameFormulario" class="btn btn-success rounded-pill px-4">
+      <i class="bi bi-plus-circle me-2"></i>Agregar Producto
+    </a>
+  </div>
+
+  {{#if productos.length}}
+  <div class="row g-4">
+    {{#each productos}}
+    <div class="col-md-4 col-lg-3">
+      <div class="producto-card">
+        <img src="{{imagen}}" alt="{{nombre}}" 
+             onerror="this.src='https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=220&fit=crop'">
+        <div class="card-body">
+          <span class="badge-categoria {{#if (eq categoria 'parasoles')}}parasol{{/if}} mb-2">{{categoria}}</span>
+          <h6 class="card-title mt-2">{{nombre}}</h6>
+          <p class="text-muted small">{{descripcion}}</p>
+          <div class="precio-producto mb-2">${{precio}}</div>
+          {{#if stock}}<small class="text-success"><i class="bi bi-check-circle me-1"></i>Stock: {{stock}}</small>{{/if}}
+          <button class="btn-agregar-carrito mt-2" 
+                  onclick="agregarAlCarrito('{{_id}}','{{nombre}}',{{precio}},'{{imagen}}','{{categoria}}')">
+            <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{else}}
+  <div class="text-center py-5">
+    <i class="bi bi-box-seam" style="font-size:5rem; color:#ccc;"></i>
+    <h4 class="mt-3 text-muted">No hay productos cargados aún</h4>
+    <p class="text-muted">¡Agregá el primer producto al catálogo!</p>
+    <a href="/api/productos/dameFormulario" class="btn btn-success rounded-pill px-5 mt-2">
+      <i class="bi bi-plus-circle me-2"></i>Agregar Producto
+    </a>
+  </div>
+  {{/if}}
+</div>

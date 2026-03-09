@@ -1,0 +1,5 @@
+.error-page { text-align: center; padding: 80px 20px; }
+.error-code { font-size: 8rem; font-weight: 900; color: var(--verde-medio, #2d6a4f); line-height: 1; }
+.error-msg { font-size: 1.5rem; color: #555; }
+.btn-volver { background: linear-gradient(135deg, #1a4a2e, #2d6a4f); color: white; padding: 12px 32px; border-radius: 30px; text-decoration: none; font-weight: 700; display: inline-block; margin-top: 20px; transition: transform 0.3s; }
+.btn-volver:hover { transform: translateY(-3px); color: white; }

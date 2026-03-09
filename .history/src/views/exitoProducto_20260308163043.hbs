@@ -1,0 +1,21 @@
+<div class="container py-5 text-center">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="form-card">
+        <div style="background: linear-gradient(135deg, #2d6a4f, #40916c); width:90px; height:90px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+          <i class="bi bi-check-lg text-white" style="font-size:2.5rem;"></i>
+        </div>
+        <h2 style="color:var(--verde-oscuro); font-weight:800;">¡Producto Guardado!</h2>
+        {{#if nombre}}<p class="text-muted">El producto <strong>"{{nombre}}"</strong> fue agregado al catálogo correctamente.</p>{{else}}<p class="text-muted">El producto fue agregado al catálogo correctamente.</p>{{/if}}
+        <div class="d-flex gap-3 justify-content-center mt-4">
+          <a href="/api/productos/dameFormulario" class="btn-submit text-decoration-none px-4 py-2">
+            <i class="bi bi-plus-circle me-2"></i>Agregar otro
+          </a>
+          <a href="/api/productos/listarProductos" class="btn btn-outline-success rounded-3 px-4">
+            <i class="bi bi-grid me-2"></i>Ver Lista de Productos
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
